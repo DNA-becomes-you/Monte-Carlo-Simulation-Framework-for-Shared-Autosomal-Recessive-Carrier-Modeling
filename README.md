@@ -24,6 +24,18 @@ This framework simulates the probability that two randomly selected individuals 
 - **Founder effect**: A fraction of loci have elevated selection weights to model subpopulation structure.
 - **Compatibility**: A pair is compatible if the intersection of their carrier locus sets is empty.
 
+## Parameters 
+--users (N) - Number of simulated individuals in the synthetic population. Represents the size of the mating pool.
+Represents the size of the mating pool.
+--genes (G) - Number of autosomal recessive disease genes being considered.
+note: Under uniform rare-event assumptions, because carriers are “spread thinner” across more loci.
+--avg-carriers (k)
+--avg-carriers (k) - Mean number of pathogenic recessive genes carried per person.
+Note: Most individuals carry 2–5 pathogenic recessive variants per ECS literature.
+--population-structures (s) - Controls locus weighting (heterogeneous probabilities). Represents ancestry structure / founder effects. Account for the fact that not all genes are equally likely with some genes having higher carrier frequencies in specific groups.
+--seed - Ensures exact reproducibility.
+--max_pairs - Number of pair comparisons sampled.
+
 ## Installation
 
 ```bash
